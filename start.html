@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="favicon.ico">
+  <meta charset="utf8">
+  <title>
+    Welcome to the Internet
+  </title>
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1.0, user-scalable=no">
+  <script type="text/javascript">
+    function getTime(){
+      var t=new Date(),nhour=t.getHours(),nmin=t.getMinutes();
+      if(nmin<=9) nmin="0"+nmin;
+      document.getElementById('clock').innerHTML=""+nhour+":"+nmin+"";
+    }
+    window.onload=function(){
+      getTime();
+      setInterval(getTime,1000);
+    }
+  </script>
+  <style>
+    body {
+      width: 100%;
+      min-height: 100vh;
+      background-image: url('http://puu.sh/CmWCt.jpg');
+      background-color: #D06293;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      font-family: 'Helvetica', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      width: 100%;
+    }
+    .box-item {
+      margin: 14px;
+      width: 240px;
+      height: 20px;
+      text-align: center;
+    }
+    .item-heading {
+      border-top: 6px solid rgba(159,23,73,0.1);
+      border-right: 6px solid rgba(159,23,73,0.1);
+      border-left: 6px solid rgba(159,23,73,0.1);
+      height: 55px;
+      line-height: 54px;
+      background: rgba(228,231,236,0.6);
+      font-weight: 900;
+      color: #FBEDD3;
+      font-size: 1.4em;
+    }
+    ul {
+      background: rgba(42,54,59, 0.6);
+      border: 6px solid rgba(159,23,73,0.1);
+      padding: 20px 0px 20px 0px;
+      margin: 0;
+      min-height: 230px;
+    }
+    li {
+      padding: 14px 0;
+      font-size: 1em;
+      font-weight: normal;
+      list-style: none;
+    }
+    li a, a:link, a:visited, a:focus {
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    li a:hover {
+      color: #F67B97;
+      cursor: pointer;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    #clock {
+      position: fixed;
+      font-family: 'Verdana', sans-serif;
+      bottom: 10px;
+      right: 10px;
+      font-size: .62em;
+      color: #cb7ea4;
+    }
+  </style>
+</head>
+  <body>
+    <!-- <base target="_blank"> lets all links open in a new window -->
+    <div class="wrapper">
+      <div class="box-item">
+        <div class="item-heading">Social Media</div>
+        <ul>
+          <li><a href="https://youtube.com/feed/subscriptions">Youtube</a></li>
+          <li><a href="https://twitter.com">Twitter</a></li>
+          <li><a href="https://instagram.com">Instagram</a></li>
+          <li><a href="https://reddit.com">Reddit</a></li>
+          <li><a href="https://gmail.com">Gmail</a></li>
+        </ul>
+       </div>
+      <div class="box-item">
+        <div class="item-heading">Games</div>
+        <ul>
+          <li><a href="https://store.steampowered.com">Steam Store</a></li>
+          <li><a href="https://steamcommunity.com">Steam Community</a></li>
+          <li><a href="https://twitch.tv/directory/following">Twitch</a></li>
+          <li><a href="https://boards.4channel.org/v/">/v/</a></li>
+          <li><a href="https://discordapp.com">Discord</a></li>
+        </ul>
+      </div>
+      <div class="box-item">
+        <div class="item-heading">日本語のウェブサイト</div>
+        <ul>
+          <li><a href="https://jisho.org/">Jisho</a></li>
+          <li><a href="https://ankiweb.net/about">Anki</a></li>
+          <li><a href="http://guidetojapanese.org/learn/">Tae Kim</a></li>
+          <li><a href="http://www.alljapaneseallthetime.com/blog/all-japanese-all-the-time-ajatt-how-to-learn-japanese-on-your-own-having-fun-and-to-fluency/">AJATT</a></li>
+          <li><a href="https://bing.com/translator/">Translate</a></li>
+        </ul>
+      </div>
+      <div class="box-item">
+        <div class="item-heading">School</div>
+        <ul>
+          <li><a href="https://catalyst.uc.edu/">Catalyst</a></li>
+          <li><a href="https://canopy.uc.edu/">Canopy</a></li>
+          <li><a href="https://uc.instructure.com/">Canvas</a></li>
+          <li><a href="https://canopy.uc.edu/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_1_1">Blackboard</a></li>
+          <li><a href="https://outlook.office365.com/mail/">School Email</a>
+        </ul>
+      </div>
+    </div>
+    <div id="clock"></div>
+  </body>
+</html>
